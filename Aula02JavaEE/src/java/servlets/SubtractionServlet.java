@@ -17,8 +17,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Luiz
  */
-@WebServlet(name = "SumServlets", urlPatterns = {"/sum.html"})
-public class SumServlets extends HttpServlet {
+@WebServlet(name = "SubtractionServlet", urlPatterns = {"/sum.html"})
+public class SubtractionServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,10 +37,10 @@ public class SumServlets extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet SumServlets</title>");            
+            out.println("<title>Servlet SubtractionServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-             out.println("<h1>JavaEE</h1>");
+            out.println("<h1>JavaEE</h1>");
             out.println("<h2>Servlets</h2>");
             out.println("<a href='index.html'>voltar</a>");
             try{
@@ -49,8 +49,8 @@ public class SumServlets extends HttpServlet {
                     double result = n1-n2;
                     out.println("<div>A subtração de "+n1+" com "+n2+" é igual a <b>"+result+"</b></div>");
             }catch(Exception ex){
-                out.println("<div>Erro ao ler parâmetros</div>");
-            }
+            out.println("<div>Erro ao ler parâmetros</div>");
+            }   
             out.println("</body>");
             out.println("</html>");
         }
