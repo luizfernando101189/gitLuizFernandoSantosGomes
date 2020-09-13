@@ -33,7 +33,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Amortização Americanab - JSP</title>
+        <title>Amortização Americana - JSP</title>
       <%@include file="WEB-INF/jspf/cabecalho.jspf" %>  
     </head>
     <body>
