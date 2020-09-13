@@ -1,35 +1,21 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>C·lculo de AmortizaÁ„o</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+    <head>
+        <title>C√°lculo de Amortiza√ß√£o</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
+
 </head>
 <body>
-
-<div class="jumbotron text-center">
-  <h1>C·lculo de AmortizaÁ„o - POO</h1>
-  <p>Feito por Milena, Richard, Luiz Fernando</p> 
-</div>
-  
-<div class="text-center">
-<div class="row">
-    <div class="col-sm-4">
-    <h3><a href="amortizacao-constante.jsp">AmortizaÁ„o Constante</a></h3>
-      <p>Clique para verificar c·lculo de AmortizaÁ„o Constante.</p>
+    <%@include file="WEB-INF/jspf/menu.jspf" %>
+    <div class="text-center">
+        <p>
+            Amortiza√ß√£o √© um processo de extin√ß√£o de uma d√≠vida atrav√©s de pagamentos peri√≥dicos, que s√£o realizados em fun√ß√£o de um planejamento, de modo que cada presta√ß√£o corresponde √† soma do reembolso do capital ou do pagamento dos juros do saldo devedor, podendo ser o reembolso de ambos, sendo que os juros s√£o sempre calculados sobre o saldo devedor.
+        </p>
+           <h3>Milena, Richard, Luiz Fernando</h3>
     </div>
-    <div class="col-sm-4">
-    <h3><a href="amortizacao-americana.jsp">AmortizaÁ„o Americana</a></h3>
-      <p>Clique para verificar c·lculo de AmortizaÁ„o Americana.</p>
-    </div>
-    <div class="col-sm-4">
-        <h3><a href="tabela-price.jsp">Tabela de Price</a></h3>    
-      <p>Clique para verificar a Tabela de PreÁos.</p>
-      
-    </div>
-  </div>
-</div>
-
 </body>
-  <%@include file="WEB-INF/jspf/rodape.jspf" %>
+    <%@include file="WEB-INF/jspf/rodape.jspf" %>
 </html>

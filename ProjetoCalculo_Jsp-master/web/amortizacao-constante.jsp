@@ -30,15 +30,17 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <%--link do boostrap --%>
         <title>Amortização constante</title>
+        <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
     </head>
     <body>
-        <div class="col-sm-4">
-            <h3><a href="home.jsp">Voltar</a></h3>
+        <%@include file="WEB-INF/jspf/menu.jspf" %>
+
+        <div class="text-center">
             <h1>Amortização Constante</h1>
             <form>
-                <h3>Valor da Parcela <br><input type="number" name="n1"></h3>
-                <h3>Porcetagem do Juros<br> <input type="number" name="n2"></h3>
-                <h3>Quantidade de Prestações<br> <input type="number" name="n3"></h3>
+                <h6>Valor da Parcela <br><input type="number" name="n1"></h6>
+                <h6>Porcentagem do Juros<br> <input type="number" name="n2"></h6>
+                <h6>Quantidade de Prestações<br> <input type="number" name="n3"></h6>
                 <div><input type="submit" value="calcular"></div>
             </form>
             <hr/>       
@@ -87,8 +89,7 @@
                 <%}%>
             </table>
             <%}%>
-
-            <%@include file="WEB-INF/jspf/rodape.jspf" %>
         </div>
     </body>
+      <%@include file="WEB-INF/jspf/rodape.jspf"%>
 </html>

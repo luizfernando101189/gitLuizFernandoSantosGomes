@@ -35,15 +35,16 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Tabela Price- JSP</title>
+<%@include file="WEB-INF/jspf/cabecalho.jspf" %>
     </head>
     <body>
-        <div class="col-sm-4">
-            <h3><a href="home.jsp">Voltar</a></h3>
+             <%@include file="WEB-INF/jspf/menu.jspf" %>
+        <div class="text-center">
             <h1>Tabela Price</h2>
                 <form>
-                    <h3>Valor<br><input type="number" name="n1"></h3>
-                    <h3>Porcentagem de juros<br><input type="number" name="n2"></h3>
-                    <h3>Quantidade de Prestações<br><input type="number" name="n3"></h3>
+                    <h6>Valor da Parcela<br><input type="number" name="n1"></h6>
+                    <h6>Porcentagem do Juros<br><input type="number" name="n2"></h6>
+                    <h6>Quantidade de Prestações<br><input type="number" name="n3"></h6>
                     <div><input type="submit" value="calcular"></h3></div>
                 </form>
                 <%-- <hr/>linha que vem antes da tabela --%>
@@ -70,7 +71,7 @@
                         double amort = 0;
                         double juros = 0;
                         double ptm = 0;
-                       
+
                         double parcela = val * (Math.pow((1 + jrs), parce) * jrs) / (Math.pow((1 + jrs), parce) - 1);
                         for (int i = 0; i <= parce; i++) {%>
                     <%if (i == 0) {%>
@@ -99,6 +100,6 @@
                 </table>
                 <%}%>
                 </body>
-                <%@include file="WEB-INF/jspf/rodape.jspf"  %>
-        </div>
+                       </div>
+                 <%@include file="WEB-INF/jspf/rodape.jspf"  %>
 </html>
