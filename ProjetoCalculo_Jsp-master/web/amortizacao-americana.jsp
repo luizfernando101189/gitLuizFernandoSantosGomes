@@ -1,6 +1,5 @@
 <%@page import="java.text.DecimalFormat"%>
 <%@page import="java.math.RoundingMode"%>
-<%@page import="java.math.BigDecimal"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
@@ -28,11 +27,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Amortização Americana - JSP</title>
-      <%@include file="WEB-INF/jspf/cabecalho.jspf" %>  
     </head>
     <body>
-    <%@include file="WEB-INF/jspf/menu.jspf" %>
         <div class="text-center">
+ <%@include file="WEB-INF/jspf/menu.jspf" %>
+ <%@include file="WEB-INF/jspf/cabecalho.jspf" %>  
             <h1>Amortização Americana</h2>
                 <form>
                     <h6>Valor da Parcela <br><input type="number" name="n1"></h6>

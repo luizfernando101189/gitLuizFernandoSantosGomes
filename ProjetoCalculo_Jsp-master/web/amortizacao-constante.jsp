@@ -28,12 +28,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Amortização constante</title>
-        <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
     </head>
     <body>
-        <%@include file="WEB-INF/jspf/menu.jspf" %>
-
         <div class="text-center">
+             <%@include file="WEB-INF/jspf/menu.jspf" %>
+             <%@include file="WEB-INF/jspf/cabecalho.jspf" %> 
+            
             <h1>Amortização Constante</h1>
             <form>
                 <h6>Valor da Parcela <br><input type="number" name="n1"></h6>
