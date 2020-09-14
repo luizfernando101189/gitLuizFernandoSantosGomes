@@ -1,9 +1,3 @@
-<%-- 
-    Document   : numeros-aleatorios
-    Created on : 31 de ago de 2020, 16:37:50
-    Author     : micam
---%>
-
 <%@page import="java.text.NumberFormat"%>
 <%@page import="java.text.DecimalFormat"%>
 <%@page import="java.math.RoundingMode"%>
@@ -47,13 +41,9 @@
                     <h6>Quantidade de Prestações<br><input type="number" name="n3"></h6>
                     <div><input type="submit" value="calcular"></h3></div>
                 </form>
-                <%-- <hr/>linha que vem antes da tabela --%>
-                <hr/>
-                <%-- esse if exibe um resultado diferente caso usuário entre com uma string --%>
                 <%if (request.getParameter("n1") == null || request.getParameter("n2") == null
                             || request.getParameter("n3") == null) {%>
                 <%} else if (erro != null) {%>
-                <%-- aqui exibe o erro --%>              
                 <div><%=erro%></div>
                 <%} else {%>
                 <%DecimalFormat df = new DecimalFormat("#,##0.00");%>

@@ -2,7 +2,6 @@
 <%@page import="java.math.BigDecimal"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<%--declaração de variaveis --%>
 <%
     String erro = null;
     double divida;
@@ -28,7 +27,6 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <%--link do boostrap --%>
         <title>Amortização constante</title>
         <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
     </head>
@@ -43,7 +41,6 @@
                 <h6>Quantidade de Prestações<br> <input type="number" name="n3"></h6>
                 <div><input type="submit" value="calcular"></div>
             </form>
-            <hr/>       
             <%if (request.getParameter("n1") == null || request.getParameter("n2") == null
                         || request.getParameter("n3") == null) {%>
 
