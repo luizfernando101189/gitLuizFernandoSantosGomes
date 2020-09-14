@@ -32,12 +32,12 @@
         <div class="text-center">
             <%@include file="WEB-INF/jspf/menu.jspf" %>
             <%@include file="WEB-INF/jspf/cabecalho.jspf" %>  
-            <h1>Amortização Americana</h2>
+            <h1>Amortização Americana</h1>
                 <form>
                     <h6>Valor da Parcela <br><input type="number" name="n1"></h6>
                     <h6>Porcentagem do Juros<br><input type="number"  name="n2"></h6>
                     <h6>Quantidade de Prestações<br><input type="number" name="n3"></h6>
-                    <div><input type="submit" value="calcular"></h3></div>
+                    <div><input type="submit" value="calcular"></div>
                 </form>
                 <%if (request.getParameter("n1") == null || request.getParameter("n2") == null
                             || request.getParameter("n3") == null) {%>
