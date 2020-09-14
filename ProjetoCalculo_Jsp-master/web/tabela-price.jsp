@@ -60,8 +60,6 @@
                         jrs = jrs / 100;
                         double amort = 0;
                         double juros = 0;
-                        double ptm = 0;
-
                         double parcela = val * (Math.pow((1 + jrs), parce) * jrs) / (Math.pow((1 + jrs), parce) - 1);
                         for (int i = 0; i <= parce; i++) {%>
                     <%if (i == 0) {%>
@@ -70,8 +68,7 @@
                     <td>-</td>
                     <td>-</td>
                     <td><%=val%></td>
-                    <%}%>
-                    <%if (i > 0) {%>
+                    <%}else if (i > 0) {%>
                     <%
                         juros = val * jrs;
                         amort = parcela - juros;
@@ -84,7 +81,6 @@
                         <td><%=df.format(juros)%></td>
                         <td><%=df.format(val)%></td>
                     </tr>
-                    <%ptm = ptm + parcela;%>
                     <%};%>
                     <%};%>
                 </table>
