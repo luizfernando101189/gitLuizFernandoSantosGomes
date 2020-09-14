@@ -30,10 +30,10 @@
 
     </head>
     <body>
-          
+
         <div class="text-center">
-               <%@include file="WEB-INF/jspf/menu.jspf" %>
-               <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
+            <%@include file="WEB-INF/jspf/menu.jspf" %>
+            <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
             <h1>Tabela Price</h2>
                 <form>
                     <h6>Valor da Parcela<br><input type="number" name="n1"></h6>
@@ -68,7 +68,7 @@
                     <td>-</td>
                     <td>-</td>
                     <td><%=val%></td>
-                    <%}else if (i > 0) {%>
+                    <%} else if (i > 0) {%>
                     <%
                         juros = val * jrs;
                         amort = parcela - juros;
@@ -85,7 +85,7 @@
                     <%};%>
                 </table>
                 <%}%>
-                </body>
-                       </div>
-                 <%@include file="WEB-INF/jspf/rodape.jspf"  %>
+                <%@include file="WEB-INF/jspf/rodape.jspf"  %>
+        </div>
+    </body>
 </html>

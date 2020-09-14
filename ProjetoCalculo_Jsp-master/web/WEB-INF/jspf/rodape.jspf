@@ -1,4 +1,4 @@
 <%@ page pageEncoding="UTF-8" %>
 
 <hr/>
-<div class="text-center">Desenvolvido na disciplina de POO</div> 
+<div>Desenvolvido na disciplina de POO</div> 

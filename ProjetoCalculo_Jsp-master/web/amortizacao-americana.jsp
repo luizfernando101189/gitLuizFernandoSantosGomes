@@ -30,8 +30,8 @@
     </head>
     <body>
         <div class="text-center">
- <%@include file="WEB-INF/jspf/menu.jspf" %>
- <%@include file="WEB-INF/jspf/cabecalho.jspf" %>  
+            <%@include file="WEB-INF/jspf/menu.jspf" %>
+            <%@include file="WEB-INF/jspf/cabecalho.jspf" %>  
             <h1>Amortização Americana</h2>
                 <form>
                     <h6>Valor da Parcela <br><input type="number" name="n1"></h6>
@@ -100,8 +100,7 @@
                     </tr>
                 </table>
                 <%}%>
-              
+                <%@include file="WEB-INF/jspf/rodape.jspf"%>
         </div>
     </body>
-      <%@include file="WEB-INF/jspf/rodape.jspf"%>
 </html>
