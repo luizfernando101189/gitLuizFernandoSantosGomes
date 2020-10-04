@@ -11,7 +11,7 @@
     <ul class="nav navbar-nav">
       <li><a href="index.jsp">Início</a></li>
       <li><a href="sobre.jsp">Sobre</a></li>
-      <li><a href="disciplinas">Minhas Dicíplinas</a></li>
+      <li><a href="disciplinas.jsp">Minhas Dicíplinas</a></li>
     </ul>
   </div>
 </nav>
